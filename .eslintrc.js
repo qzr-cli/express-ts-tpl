@@ -3,7 +3,7 @@
  * @Description  :
  * @Autor        : Qzr(z5021996@vip.qq.com)
  * @LastEditors  : Qzr(z5021996@vip.qq.com)
- * @LastEditTime : 2022-11-02 15:52:47
+ * @LastEditTime : 2022-11-04 17:24:02
  */
 
 module.exports = {
@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-useless-constructor': 'off',
     'no-empty-function': 'off',
-    'guard-for-in': 'off'
+    'guard-for-in': 'off',
+    'indent': 'off'
   }
 }
