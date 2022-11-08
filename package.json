@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon src/app.ts",
-    "start:prod": "cross-env NODE_ENV=pruduction nodemon src/app.ts",
+    "start": "cross-env NODE_ENV=development nodemon",
+    "start:prod": "cross-env NODE_ENV=pruduction nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
@@ -19,6 +19,7 @@
     "express": "^4.18.2",
     "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
+    "tsconfig-paths": "^4.1.0",
     "typeorm": "^0.3.10"
   },
   "devDependencies": {

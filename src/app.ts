@@ -1,7 +1,9 @@
 import express from 'express'
 import router from './router' // 路由
 import './config'
-import './database'
+import databaseInit from './database'
+
+databaseInit()
 
 const PORT = 1337
 const app = express()

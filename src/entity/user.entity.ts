@@ -1,10 +1,17 @@
+import Common from './common.entity'
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
 
+enum UserRole {
+  ROOT = 'root',
+  AUTHOR = 'author',
+  VISITOR = 'visitor'
+}
+
 @Entity()
-export class User {
+export default class Users extends Common {
   // 主键id uuid通用唯一识别码
   @PrimaryGeneratedColumn('uuid')
-  id: number
+  uuid: number
 
   // 用户名
   @Column({ length: 100 })
@@ -21,7 +28,11 @@ export class User {
   email: string
 
   // 用户角色
-  @Column('simple-enum', { enum: ['root', 'author', 'visitor'] })
+  @Column({
+    type: 'enum',
+    enum: UserRole,
+    default: UserRole.VISITOR
+  })
   role: string
 
   // 手机号
