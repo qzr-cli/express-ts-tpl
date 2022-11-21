@@ -8,7 +8,7 @@ enum UserRole {
 }
 
 @Entity()
-export default class Users extends Common {
+export default class User extends Common {
   // 主键id uuid通用唯一识别码
   @PrimaryGeneratedColumn('uuid')
   uuid: number

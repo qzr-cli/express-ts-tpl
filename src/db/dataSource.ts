@@ -7,7 +7,7 @@ const dataSource = new DataSource({
   username: 'root',
   password: '66668888',
   database: 'page',
-  entities: ['src/entity/*.ts'],
+  entities: ['src/db/entity/*.ts'],
   logging: true,
   synchronize: true
 })
